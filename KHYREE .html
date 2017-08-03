@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+
+		<font size="6"><h1>Kehlani The Goods</h1></font>
+	<ol>
+	<li>Kehlani The Goods </li>
+
+
+	</ol>
+
+	<ul>
+		<li>Kehlani's Middle name is Ashely</li>
+		<li>Kehlani is originally from Oakland California </li>
+		<li> Kehlani was previously dating Kyrie Irving </li>
+		<li>In her early life Kehlani was a dancer</li>
+		<li> Kehlani's parents both struggled with drug addiction and eventually her mom went to prison and her father passed </li>
+		<li> Kehlani was adopted by her aunt </li>
+		<li> Kehlani was on America's Got Talent but got fourth place that didn't stop her </li>
+	</ul>
+					
+		<img src="http://i.vimeocdn.com/video/472426531_1280x720.jpg">
+				<h1 id="like"> 0 </h1>
+
+		<button onclick="Like()"> Like </button>
+
+		<button onclick="ktwsong()">Click Here</button>
+
+		<style type="text/css">
+			img {
+				width: 500px;
+				display: block;
+				margin: 0 auto;
+
+			}
+			body{
+			text-align: center;
+			 -webkit-animation: mymove 3s infinite;
+		}
+		li {
+			list-style-type: none
+		}
+		/* Standard syntax */
+		@keyframes mymove {
+			from {background-color:rgb(255, 112, 176);}
+			to {background-color: blue;}
+			}
+		</style>
+		<audio style="display: none" id="Song" controls> <source src="Song1.mp3" type="audio/mp3"></audio>
+		<script> 
+		var x = 0
+		function Like() {   
+			x = x+1;
+			document.getElementById('like').innerHTML= x
+			
+		}
+		function ktwsong() {
+			document.getElementById("Song").play()
+		} 
+		
+
+		</script>
+	</body>
+</html>
